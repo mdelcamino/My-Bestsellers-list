@@ -1,0 +1,31 @@
+{
+  {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "bs",
+    "type": "object",
+    "properties": {
+      "tittle": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 200
+      },
+      "author": {
+        "type": "string"
+   
+      },
+      "createdAt": {
+        "type": "string"
+      },
+      "valuation": {
+        "type": "string"
+      }
+
+    },
+    "required": [
+      "tittle",
+      "author"
+    ],
+    "additionalProperties": false
+  }
+
+}

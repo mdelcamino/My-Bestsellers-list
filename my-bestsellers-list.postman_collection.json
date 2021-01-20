@@ -1,0 +1,1125 @@
+{
+	"info": {
+		"_postman_id": "78626dba-b249-4295-9f6a-6135cea8edd0",
+		"name": "my-bestsellers-list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestseller",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "headerPrefix",
+							"value": "Bearer {{auth}}",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenType",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Auth",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://{{auth0_domain}}/authorize?audience={{auth0_audience}}",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "dev",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://{{auth0_domain}}/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://www.getpostman.com/oauth2/callback",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{auth0_client_secret}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{auth0_client_id}}",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "openid profile email",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestsellers",
+					"protocol": "https",
+					"host": [
+						"o104xfc0uj",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"bestsellers"
+					]
+				},
+				"description": "API to retrieve all the items on bestseller list of the user authenticated \r\n"
+			},
+			"response": [
+				{
+					"name": "get BestSellers List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "header",
+								"value": "'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFuclJSaHFwMk5MSUoyTWdhbzZpcCJ9.eyJpc3MiOiJodHRwczovL2Rldi1sYTg3OWFuMy5ldS5hdXRoMC5jb20vIiwic3ViIjoiMGJ1VXlKdlQyUzZSN09IWnM3R1AxN0FvMFpTeFZUaThAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vbzEwNHhmYzB1ai5leGVjdXRlLWFwaS51cy1lYXN0LTEuYW1hem9uYXdzLmNvbS9kZXYvYmVzdHNlbGxlciIsImlhdCI6MTYxMDgyMTIyMiwiZXhwIjoxNjEwOTA3NjIyLCJhenAiOiIwYnVVeUp2VDJTNlI3T0haczdHUDE3QW8wWlN4VlRpOCIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.Mrer23u5u8LxT3GcBJA8ty1NuxY-IFAQ98LLT-zsV4AGjhvofSxFWxAt-0HvLpU1duux4UMLKPNiljWGneYQpunZfTS1PIIIErU86R34RkFQh2uXzB41PsHrj-DiNAYvbOAEYzWpLBOpi7HDUMS2hQYMzjNtmP9nrRFYxENGJO2uwcexXUMRFXUuwQzQNspIzAI_vqHUNTMbtHFGtcXTzYuJ1mOqwtTrdyjZkB6lXZXNcFEk7lG0Sw-KmGwQZBi2bIZwkNeXjBEVWwVGst-a0d86ta1n0FmYT-aZOwBjVVApCu8nUo4_l2E2yyGAbf8U-M7nFo3P-PoX4PA2XMmt6w'",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestsellers?userId=0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8",
+							"protocol": "https",
+							"host": [
+								"o104xfc0uj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"bestsellers"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "643"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Jan 2021 20:47:20 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "5c0f148e-5269-4c0b-b23f-1ddbd2c76a09"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "ZQmRxGoOIAMFnXA="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-600350d8-41e1779a735a10591b844449"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 86b86f43445d5446c8b16910b2a9b8f9.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "MAD50-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "DFSC0YcWHn3f8drv-t1GzFKdEEo9D3KXuvZowje5_wFV58bGIQ52Sg=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"items\": [\n        {\n            \"createdAt\": \"2021-01-16T20:34:04.885Z\",\n            \"tittle\": \"El nombre de la rosa\",\n            \"bsId\": \"a8f3b117-a80c-4efb-886a-92bc6559c68a\",\n            \"valuation\": \"10\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Umberto Eco\"\n        },\n        {\n            \"createdAt\": \"2021-01-16T20:35:02.588Z\",\n            \"tittle\": \"El Alquimista\",\n            \"bsId\": \"34cf5c0d-96b4-4076-b671-57e8f86d9605\",\n            \"valuation\": \"8\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Paulo Coelho\"\n        },\n        {\n            \"createdAt\": \"2021-01-16T20:41:15.082Z\",\n            \"tittle\": \"El principito\",\n            \"bsId\": \"1724a334-131e-4f59-bf3a-a0bb1e2c756c\",\n            \"valuation\": \"7\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Antoine de Saint-Exupéry\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestseller",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "headerPrefix",
+							"value": "Bearer {{auth}}",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFuclJSaHFwMk5MSUoyTWdhbzZpcCJ9.eyJpc3MiOiJodHRwczovL2Rldi1sYTg3OWFuMy5ldS5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgyMzg0MDY2NTcwNzY1OTU4NzciLCJhdWQiOlsiaHR0cHM6Ly9vMTA0eGZjMHVqLmV4ZWN1dGUtYXBpLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL2Rldi9iZXN0c2VsbGVyIiwiaHR0cHM6Ly9kZXYtbGE4NzlhbjMuZXUuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYxMDgyNzgzOCwiZXhwIjoxNjEwOTE0MjM4LCJhenAiOiI1UnVwa1ZyNTBUWFJyM1Jza2EyWnQ1UG41RWQzdmx1TyIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.JrKfo8DRYyfE38XCO9_jeFSXARDLVRps3j6kshtEspUip6xbAnRGV3V5SPH75hevieqcHRrObOEUQ7uJu8tL70NH1V7YsM3-LFOk7B-wQ2aVtxAtsKJFaL3yscpWmLjUFFH0Mqxy8uNxPTgYOY1bO3sKFkTn5smQIIOPWlqcSP4QgRATWMf85AyGVo7FSjY8YIzAF9xeddPKBDDOH7iWUgl87RyUHpeIELd_VJOuEsFW1moDoldU7D3hCvMbB4sLJY5XE905GoW61yxUHSuWIuVRUdm6fv2IFfAxeF9rkHzhfGa8XY5zVFsDzXel7XrQPeBCll9-ODzp9PqtvE22AQ",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Auth",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://{{auth0_domain}}/authorize?audience={{auth0_audience}}",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "dev",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://{{auth0_domain}}/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://www.getpostman.com/oauth2/callback",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{auth0_client_secret}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{auth0_client_id}}",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "openid profile email",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n\"valuation\": \"5\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestsellers/a520beaf-093a-43fa-8183-63377772d9ba",
+					"protocol": "https",
+					"host": [
+						"o104xfc0uj",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"bestsellers",
+						"a520beaf-093a-43fa-8183-63377772d9ba"
+					]
+				},
+				"description": "API to update the valuation field of an item"
+			},
+			"response": [
+				{
+					"name": "get BestSellers List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "header",
+								"value": "'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFuclJSaHFwMk5MSUoyTWdhbzZpcCJ9.eyJpc3MiOiJodHRwczovL2Rldi1sYTg3OWFuMy5ldS5hdXRoMC5jb20vIiwic3ViIjoiMGJ1VXlKdlQyUzZSN09IWnM3R1AxN0FvMFpTeFZUaThAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vbzEwNHhmYzB1ai5leGVjdXRlLWFwaS51cy1lYXN0LTEuYW1hem9uYXdzLmNvbS9kZXYvYmVzdHNlbGxlciIsImlhdCI6MTYxMDgyMTIyMiwiZXhwIjoxNjEwOTA3NjIyLCJhenAiOiIwYnVVeUp2VDJTNlI3T0haczdHUDE3QW8wWlN4VlRpOCIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.Mrer23u5u8LxT3GcBJA8ty1NuxY-IFAQ98LLT-zsV4AGjhvofSxFWxAt-0HvLpU1duux4UMLKPNiljWGneYQpunZfTS1PIIIErU86R34RkFQh2uXzB41PsHrj-DiNAYvbOAEYzWpLBOpi7HDUMS2hQYMzjNtmP9nrRFYxENGJO2uwcexXUMRFXUuwQzQNspIzAI_vqHUNTMbtHFGtcXTzYuJ1mOqwtTrdyjZkB6lXZXNcFEk7lG0Sw-KmGwQZBi2bIZwkNeXjBEVWwVGst-a0d86ta1n0FmYT-aZOwBjVVApCu8nUo4_l2E2yyGAbf8U-M7nFo3P-PoX4PA2XMmt6w'",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestsellers?userId=0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8",
+							"protocol": "https",
+							"host": [
+								"o104xfc0uj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"bestsellers"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "643"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Jan 2021 20:47:20 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "5c0f148e-5269-4c0b-b23f-1ddbd2c76a09"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "ZQmRxGoOIAMFnXA="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-600350d8-41e1779a735a10591b844449"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 86b86f43445d5446c8b16910b2a9b8f9.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "MAD50-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "DFSC0YcWHn3f8drv-t1GzFKdEEo9D3KXuvZowje5_wFV58bGIQ52Sg=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"items\": [\n        {\n            \"createdAt\": \"2021-01-16T20:34:04.885Z\",\n            \"tittle\": \"El nombre de la rosa\",\n            \"bsId\": \"a8f3b117-a80c-4efb-886a-92bc6559c68a\",\n            \"valuation\": \"10\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Umberto Eco\"\n        },\n        {\n            \"createdAt\": \"2021-01-16T20:35:02.588Z\",\n            \"tittle\": \"El Alquimista\",\n            \"bsId\": \"34cf5c0d-96b4-4076-b671-57e8f86d9605\",\n            \"valuation\": \"8\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Paulo Coelho\"\n        },\n        {\n            \"createdAt\": \"2021-01-16T20:41:15.082Z\",\n            \"tittle\": \"El principito\",\n            \"bsId\": \"1724a334-131e-4f59-bf3a-a0bb1e2c756c\",\n            \"valuation\": \"7\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Antoine de Saint-Exupéry\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestseller",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "headerPrefix",
+							"value": "Bearer {{auth}}",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenType",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Auth",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://{{auth0_domain}}/authorize?audience={{auth0_audience}}",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "dev",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://{{auth0_domain}}/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://www.getpostman.com/oauth2/callback",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{auth0_client_secret}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{auth0_client_id}}",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "openid profile email",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"tittle\": \"El cerco de Numancia\",\r\n            \"valuation\": \"7\",\r\n             \"author\": \"Miguel de Cervantes\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestseller",
+					"protocol": "https",
+					"host": [
+						"o104xfc0uj",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"bestseller"
+					]
+				},
+				"description": "API to post a bestseller to my list"
+			},
+			"response": [
+				{
+					"name": "get BestSellers List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "header",
+								"value": "'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFuclJSaHFwMk5MSUoyTWdhbzZpcCJ9.eyJpc3MiOiJodHRwczovL2Rldi1sYTg3OWFuMy5ldS5hdXRoMC5jb20vIiwic3ViIjoiMGJ1VXlKdlQyUzZSN09IWnM3R1AxN0FvMFpTeFZUaThAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vbzEwNHhmYzB1ai5leGVjdXRlLWFwaS51cy1lYXN0LTEuYW1hem9uYXdzLmNvbS9kZXYvYmVzdHNlbGxlciIsImlhdCI6MTYxMDgyMTIyMiwiZXhwIjoxNjEwOTA3NjIyLCJhenAiOiIwYnVVeUp2VDJTNlI3T0haczdHUDE3QW8wWlN4VlRpOCIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.Mrer23u5u8LxT3GcBJA8ty1NuxY-IFAQ98LLT-zsV4AGjhvofSxFWxAt-0HvLpU1duux4UMLKPNiljWGneYQpunZfTS1PIIIErU86R34RkFQh2uXzB41PsHrj-DiNAYvbOAEYzWpLBOpi7HDUMS2hQYMzjNtmP9nrRFYxENGJO2uwcexXUMRFXUuwQzQNspIzAI_vqHUNTMbtHFGtcXTzYuJ1mOqwtTrdyjZkB6lXZXNcFEk7lG0Sw-KmGwQZBi2bIZwkNeXjBEVWwVGst-a0d86ta1n0FmYT-aZOwBjVVApCu8nUo4_l2E2yyGAbf8U-M7nFo3P-PoX4PA2XMmt6w'",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestsellers?userId=0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8",
+							"protocol": "https",
+							"host": [
+								"o104xfc0uj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"bestsellers"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "643"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Jan 2021 20:47:20 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "5c0f148e-5269-4c0b-b23f-1ddbd2c76a09"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "ZQmRxGoOIAMFnXA="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-600350d8-41e1779a735a10591b844449"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 86b86f43445d5446c8b16910b2a9b8f9.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "MAD50-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "DFSC0YcWHn3f8drv-t1GzFKdEEo9D3KXuvZowje5_wFV58bGIQ52Sg=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"items\": [\n        {\n            \"createdAt\": \"2021-01-16T20:34:04.885Z\",\n            \"tittle\": \"El nombre de la rosa\",\n            \"bsId\": \"a8f3b117-a80c-4efb-886a-92bc6559c68a\",\n            \"valuation\": \"10\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Umberto Eco\"\n        },\n        {\n            \"createdAt\": \"2021-01-16T20:35:02.588Z\",\n            \"tittle\": \"El Alquimista\",\n            \"bsId\": \"34cf5c0d-96b4-4076-b671-57e8f86d9605\",\n            \"valuation\": \"8\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Paulo Coelho\"\n        },\n        {\n            \"createdAt\": \"2021-01-16T20:41:15.082Z\",\n            \"tittle\": \"El principito\",\n            \"bsId\": \"1724a334-131e-4f59-bf3a-a0bb1e2c756c\",\n            \"valuation\": \"7\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Antoine de Saint-Exupéry\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestseller",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "headerPrefix",
+							"value": "Bearer {{auth}}",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFuclJSaHFwMk5MSUoyTWdhbzZpcCJ9.eyJpc3MiOiJodHRwczovL2Rldi1sYTg3OWFuMy5ldS5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgyMzg0MDY2NTcwNzY1OTU4NzciLCJhdWQiOlsiaHR0cHM6Ly9vMTA0eGZjMHVqLmV4ZWN1dGUtYXBpLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL2Rldi9iZXN0c2VsbGVyIiwiaHR0cHM6Ly9kZXYtbGE4NzlhbjMuZXUuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYxMDgyNzgzOCwiZXhwIjoxNjEwOTE0MjM4LCJhenAiOiI1UnVwa1ZyNTBUWFJyM1Jza2EyWnQ1UG41RWQzdmx1TyIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.JrKfo8DRYyfE38XCO9_jeFSXARDLVRps3j6kshtEspUip6xbAnRGV3V5SPH75hevieqcHRrObOEUQ7uJu8tL70NH1V7YsM3-LFOk7B-wQ2aVtxAtsKJFaL3yscpWmLjUFFH0Mqxy8uNxPTgYOY1bO3sKFkTn5smQIIOPWlqcSP4QgRATWMf85AyGVo7FSjY8YIzAF9xeddPKBDDOH7iWUgl87RyUHpeIELd_VJOuEsFW1moDoldU7D3hCvMbB4sLJY5XE905GoW61yxUHSuWIuVRUdm6fv2IFfAxeF9rkHzhfGa8XY5zVFsDzXel7XrQPeBCll9-ODzp9PqtvE22AQ",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Auth",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://{{auth0_domain}}/authorize?audience={{auth0_audience}}",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "dev",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://{{auth0_domain}}/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://www.getpostman.com/oauth2/callback",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{auth0_client_secret}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{auth0_client_id}}",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "openid profile email",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestsellers/ec516b61-5734-4131-a0cb-06de38b66360",
+					"protocol": "https",
+					"host": [
+						"o104xfc0uj",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"bestsellers",
+						"ec516b61-5734-4131-a0cb-06de38b66360"
+					]
+				},
+				"description": "API to remove an bestseller from my list"
+			},
+			"response": [
+				{
+					"name": "get BestSellers List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "header",
+								"value": "'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFuclJSaHFwMk5MSUoyTWdhbzZpcCJ9.eyJpc3MiOiJodHRwczovL2Rldi1sYTg3OWFuMy5ldS5hdXRoMC5jb20vIiwic3ViIjoiMGJ1VXlKdlQyUzZSN09IWnM3R1AxN0FvMFpTeFZUaThAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vbzEwNHhmYzB1ai5leGVjdXRlLWFwaS51cy1lYXN0LTEuYW1hem9uYXdzLmNvbS9kZXYvYmVzdHNlbGxlciIsImlhdCI6MTYxMDgyMTIyMiwiZXhwIjoxNjEwOTA3NjIyLCJhenAiOiIwYnVVeUp2VDJTNlI3T0haczdHUDE3QW8wWlN4VlRpOCIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.Mrer23u5u8LxT3GcBJA8ty1NuxY-IFAQ98LLT-zsV4AGjhvofSxFWxAt-0HvLpU1duux4UMLKPNiljWGneYQpunZfTS1PIIIErU86R34RkFQh2uXzB41PsHrj-DiNAYvbOAEYzWpLBOpi7HDUMS2hQYMzjNtmP9nrRFYxENGJO2uwcexXUMRFXUuwQzQNspIzAI_vqHUNTMbtHFGtcXTzYuJ1mOqwtTrdyjZkB6lXZXNcFEk7lG0Sw-KmGwQZBi2bIZwkNeXjBEVWwVGst-a0d86ta1n0FmYT-aZOwBjVVApCu8nUo4_l2E2yyGAbf8U-M7nFo3P-PoX4PA2XMmt6w'",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestsellers?userId=0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8",
+							"protocol": "https",
+							"host": [
+								"o104xfc0uj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"bestsellers"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "643"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Jan 2021 20:47:20 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "5c0f148e-5269-4c0b-b23f-1ddbd2c76a09"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "ZQmRxGoOIAMFnXA="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-600350d8-41e1779a735a10591b844449"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 86b86f43445d5446c8b16910b2a9b8f9.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "MAD50-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "DFSC0YcWHn3f8drv-t1GzFKdEEo9D3KXuvZowje5_wFV58bGIQ52Sg=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"items\": [\n        {\n            \"createdAt\": \"2021-01-16T20:34:04.885Z\",\n            \"tittle\": \"El nombre de la rosa\",\n            \"bsId\": \"a8f3b117-a80c-4efb-886a-92bc6559c68a\",\n            \"valuation\": \"10\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Umberto Eco\"\n        },\n        {\n            \"createdAt\": \"2021-01-16T20:35:02.588Z\",\n            \"tittle\": \"El Alquimista\",\n            \"bsId\": \"34cf5c0d-96b4-4076-b671-57e8f86d9605\",\n            \"valuation\": \"8\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Paulo Coelho\"\n        },\n        {\n            \"createdAt\": \"2021-01-16T20:41:15.082Z\",\n            \"tittle\": \"El principito\",\n            \"bsId\": \"1724a334-131e-4f59-bf3a-a0bb1e2c756c\",\n            \"valuation\": \"7\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Antoine de Saint-Exupéry\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestseller",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "headerPrefix",
+							"value": "Bearer {{auth}}",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFuclJSaHFwMk5MSUoyTWdhbzZpcCJ9.eyJpc3MiOiJodHRwczovL2Rldi1sYTg3OWFuMy5ldS5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgyMzg0MDY2NTcwNzY1OTU4NzciLCJhdWQiOlsiaHR0cHM6Ly9vMTA0eGZjMHVqLmV4ZWN1dGUtYXBpLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL2Rldi9iZXN0c2VsbGVyIiwiaHR0cHM6Ly9kZXYtbGE4NzlhbjMuZXUuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYxMDgyNzgzOCwiZXhwIjoxNjEwOTE0MjM4LCJhenAiOiI1UnVwa1ZyNTBUWFJyM1Jza2EyWnQ1UG41RWQzdmx1TyIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwifQ.JrKfo8DRYyfE38XCO9_jeFSXARDLVRps3j6kshtEspUip6xbAnRGV3V5SPH75hevieqcHRrObOEUQ7uJu8tL70NH1V7YsM3-LFOk7B-wQ2aVtxAtsKJFaL3yscpWmLjUFFH0Mqxy8uNxPTgYOY1bO3sKFkTn5smQIIOPWlqcSP4QgRATWMf85AyGVo7FSjY8YIzAF9xeddPKBDDOH7iWUgl87RyUHpeIELd_VJOuEsFW1moDoldU7D3hCvMbB4sLJY5XE905GoW61yxUHSuWIuVRUdm6fv2IFfAxeF9rkHzhfGa8XY5zVFsDzXel7XrQPeBCll9-ODzp9PqtvE22AQ",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Auth",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://{{auth0_domain}}/authorize?audience={{auth0_audience}}",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "dev",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://{{auth0_domain}}/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://www.getpostman.com/oauth2/callback",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{auth0_client_secret}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{auth0_client_id}}",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "openid profile email",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "attachment",
+							"type": "file",
+							"src": "/C:/Users/camino/Pictures/Saved Pictures/SKELD_MAP.jpg"
+						},
+						{
+							"key": "bsId",
+							"value": "1724a334-131e-4f59-bf3a-a0bb1e2c756c",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "valuation",
+							"value": "9",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestsellers/a520beaf-093a-43fa-8183-63377772d9ba/attachment",
+					"protocol": "https",
+					"host": [
+						"o104xfc0uj",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"bestsellers",
+						"a520beaf-093a-43fa-8183-63377772d9ba",
+						"attachment"
+					],
+					"query": [
+						{
+							"key": "attachment",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "valuation",
+							"value": "9",
+							"disabled": true
+						}
+					]
+				},
+				"description": "API to add a file to an item"
+			},
+			"response": [
+				{
+					"name": "get BestSellers List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "header",
+								"value": "'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlFuclJSaHFwMk5MSUoyTWdhbzZpcCJ9.eyJpc3MiOiJodHRwczovL2Rldi1sYTg3OWFuMy5ldS5hdXRoMC5jb20vIiwic3ViIjoiMGJ1VXlKdlQyUzZSN09IWnM3R1AxN0FvMFpTeFZUaThAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vbzEwNHhmYzB1ai5leGVjdXRlLWFwaS51cy1lYXN0LTEuYW1hem9uYXdzLmNvbS9kZXYvYmVzdHNlbGxlciIsImlhdCI6MTYxMDgyMTIyMiwiZXhwIjoxNjEwOTA3NjIyLCJhenAiOiIwYnVVeUp2VDJTNlI3T0haczdHUDE3QW8wWlN4VlRpOCIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.Mrer23u5u8LxT3GcBJA8ty1NuxY-IFAQ98LLT-zsV4AGjhvofSxFWxAt-0HvLpU1duux4UMLKPNiljWGneYQpunZfTS1PIIIErU86R34RkFQh2uXzB41PsHrj-DiNAYvbOAEYzWpLBOpi7HDUMS2hQYMzjNtmP9nrRFYxENGJO2uwcexXUMRFXUuwQzQNspIzAI_vqHUNTMbtHFGtcXTzYuJ1mOqwtTrdyjZkB6lXZXNcFEk7lG0Sw-KmGwQZBi2bIZwkNeXjBEVWwVGst-a0d86ta1n0FmYT-aZOwBjVVApCu8nUo4_l2E2yyGAbf8U-M7nFo3P-PoX4PA2XMmt6w'",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://o104xfc0uj.execute-api.us-east-1.amazonaws.com/dev/bestsellers?userId=0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8",
+							"protocol": "https",
+							"host": [
+								"o104xfc0uj",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"bestsellers"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "643"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Jan 2021 20:47:20 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "5c0f148e-5269-4c0b-b23f-1ddbd2c76a09"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "ZQmRxGoOIAMFnXA="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-600350d8-41e1779a735a10591b844449"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 86b86f43445d5446c8b16910b2a9b8f9.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "MAD50-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "DFSC0YcWHn3f8drv-t1GzFKdEEo9D3KXuvZowje5_wFV58bGIQ52Sg=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"items\": [\n        {\n            \"createdAt\": \"2021-01-16T20:34:04.885Z\",\n            \"tittle\": \"El nombre de la rosa\",\n            \"bsId\": \"a8f3b117-a80c-4efb-886a-92bc6559c68a\",\n            \"valuation\": \"10\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Umberto Eco\"\n        },\n        {\n            \"createdAt\": \"2021-01-16T20:35:02.588Z\",\n            \"tittle\": \"El Alquimista\",\n            \"bsId\": \"34cf5c0d-96b4-4076-b671-57e8f86d9605\",\n            \"valuation\": \"8\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Paulo Coelho\"\n        },\n        {\n            \"createdAt\": \"2021-01-16T20:41:15.082Z\",\n            \"tittle\": \"El principito\",\n            \"bsId\": \"1724a334-131e-4f59-bf3a-a0bb1e2c756c\",\n            \"valuation\": \"7\",\n            \"userId\": \"0buUyJvT2S6R7OHZs7GP17Ao0ZSxVTi8@clients\",\n            \"author\": \"Antoine de Saint-Exupéry\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
